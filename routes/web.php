@@ -25,7 +25,6 @@ Route::post('login', [AdminController::class, 'checklogin'])->name('login');
 
 Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
     //đăng xuất
-    Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
-
+   git
     
 });
