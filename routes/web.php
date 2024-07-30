@@ -27,7 +27,5 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
     //đăng xuất
     Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 
-    Route::resource('category', CategoryController::class);
-    Route::resource('product', ProductController::class);
-    Route::resource('user', UserController::class);
+    
 });
